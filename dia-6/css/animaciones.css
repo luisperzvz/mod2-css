@@ -1,0 +1,57 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    border: 2px dotted black;
+    animation-name: mi-animacion-3;
+    animation-duration: 2s;
+    margin-left: 100px;
+}
+
+@keyframes mi-animacion-1 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mi-animacion-2 {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    20% {
+        transform: translateX(100px);
+    }
+
+    40% {
+        transform: translateX(0);
+    }
+
+    60% {
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mi-animacion-3 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,92 @@
+main {
+    position: relative;
+    background-color: rgb(158, 209, 254);
+    height: 2200px;
+}
+
+div {
+    position: static;
+    border: 2px dotted black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: beige;
+}
+
+/**
+ * #######################
+ * ## Position relative ##
+ * #######################
+ *
+ * Un elemento con una posición relativa tomará como referencia la posición inicial del elemento.
+ *
+ * Nos permite desplazar el elemento vertical y horizontalmente con la ayuda de las propiedades: top, right, bottom, left.
+ * 
+*/
+
+div.relative {
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+/**
+ * #######################
+ * ## Position absolute ##
+ * #######################
+ *
+ * Permite posicionar el elemento tomando como referencia el primer contenedor posicionado (que tenga una posición distinta 
+ * de "static") que tenga por encima (padre, abuelo, tatarabuelo, etc.). Si no hay ningún contenedor que cumpla esta condición,
+ * tomará como referencia el viewport (la pantalla). 
+ *
+ * Nos permite desplazar el elemento vertical y horizontalmente con la ayuda de las propiedades: top, right, bottom, left.
+ *
+ * En este caso hemos aplicado una posición relativa sobre <main>. Esta etiqueta es el padre del <div> con clase "absolute", 
+ * por tanto el <div> se posicionará tomando como referencia la etiqueta <main>. Prueba a eliminar la posición relativa de 
+ * <main> y observa como el <div> se posiciona tomando como referencia el viewport.
+ * 
+*/
+
+div.absolute {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+/**
+ * ####################
+ * ## Position fixed ##
+ * ####################
+ *
+ * Permite posicionar el elemento tomando como referencia el viewport (la pantalla). El elemento tomará la posición de la 
+ * pantalla que nosotros le indiquemos y no se moverá, ni siquiera al hacer scroll. 
+ *
+ * Nos permite desplazar el elemento vertical y horizontalmente con la ayuda de las propiedades: top, right, bottom, left.
+ * 
+*/
+
+div.fixed {
+    position: fixed;
+    left: 300px;
+}
+
+/**
+ * #####################
+ * ## Position sticky ##
+ * #####################
+ *
+ * Se comporta exactamente igual que un elemento con posición relativa hasta que el contenedor cruza un límite establecido.
+ * Por ejemplo, si tenemos un <div> con posición "sticky" dentro de <main> y le asignamos un "top: 10px", en el momento en que
+ * hagamos scroll y el borde superior del viewport se encuentre a 10px del <div>, este pasará a comportarse como un elemento 
+ * fijo en la pantalla y nos acompañará mientras hagamos scroll. El elemento dejará de acompañarnos si alcanza los límites del
+ * <main> (no puede salirse de su contenedor).
+ *
+ * Nos permite desplazar el elemento vertical y horizontalmente con la ayuda de las propiedades: top, right, bottom, left.
+ * 
+*/
+
+div.sticky {
+    position: sticky;
+    top: 10px;
+}

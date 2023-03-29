@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+.fb {
+    background: url('../img/facebook.png');
+}
+
+.ig {
+    background: url('../img/instagram.png');
+}
+
+.tw {
+    background: url('../img/twitter.png');
+}
+
+.in {
+    background: url('../img/linkedin.png');
+}
+
+.link {
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+}
+
+/**
+ * ############
+ * ## Header ##
+ * ############
+*/
+
+body > header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+body > header > h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+/**
+ * ##########
+ * ## Main ##
+ * ##########
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+main > article {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    max-width: 350px;
+    background-color: blueviolet;
+}
+
+main > article > header {
+    background-color: white;
+    padding: 2rem;
+}
+
+main > article > header > figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main > article > header > figure > img {
+    height: 170px;
+}
+
+main > article > header > figure > figcaption {
+    font-weight: bold;
+}
+
+main > article > header > nav > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    gap: 0.3rem;
+}
+
+main > article > p {
+    color: white;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+/**
+ * ############
+ * ## +750px ##
+ * ############
+*/
+
+@media (min-width: 750px) {
+    body > header > h1 {
+        font-size: 4rem;
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+    }
+
+    main > article {
+        flex-basis: 48%;
+        height: 720px;
+    }
+}
+
+/**
+ * ############
+ * ## +1150px ##
+ * ############
+*/
+
+@media (min-width: 1150px) {
+    body > header > h1 {
+        font-size: 5rem;
+    }
+
+    main {
+        align-items: center;
+    }
+
+    main > article {
+        flex-basis: 32%;
+        height: auto;
+    }
+}

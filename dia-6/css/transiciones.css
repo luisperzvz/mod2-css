@@ -1,0 +1,20 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    border: 2px dotted black;
+}
+
+div:hover {
+    background-color: green;
+}
+
+div {
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+
+    /* Combinaciñón de las cuatro propiedades anteriores. */
+    transition: background-color 1s ease-out 500ms;
+}

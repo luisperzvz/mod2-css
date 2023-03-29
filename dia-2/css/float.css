@@ -1,0 +1,16 @@
+img {
+    width: 100px;
+}
+
+blockquote {
+    font-size: 2rem;
+    border: 2px solid black;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}

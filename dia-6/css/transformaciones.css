@@ -1,0 +1,45 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    border: 2px dotted black;
+}
+
+/** 
+* Translate: cambio de posición.
+*  
+*  - El primer valor permite desplazar el elemento 
+*    a la derecha (valor positivo) o a la izquierda
+*    (valor negativo).
+*   
+*  - El segundo valor permite desplazar el elemento 
+*    hacia abajo (valor positivo) o hacia arriba
+*    (valor negativo).   
+*/
+div {
+    transform: translate(200px, 2rem);
+}
+
+/** 
+ * Scale: cambio de escala. 
+*/
+div {
+    transform: scale(0.5);
+}
+
+/** 
+ * Rotate: rotación (en grados "deg"). 
+ *
+ * ¡OJO! No podemos asignar a un mismo elemento varias veces
+ * la propiedad "transform". Solo debe existir una vez.
+*/
+div {
+    transform: rotate(60deg);
+}
+
+/** Si queremos aplicar los tres valores anteriores deberíamos
+ *  hacer lo siguiente.
+*/
+div {
+    transform: translate(200px, 100px) scale(1.2) rotate(30deg);
+}

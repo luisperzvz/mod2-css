@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(35, 35, 35);
+}
+
+/* Header */
+
+body > header {
+    padding: 1rem;
+}
+
+body > header > h1 {
+    color: white;
+}
+
+body > header a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Main */
+
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 800px;
+    align-content: space-evenly;
+    justify-content: space-between;
+}
+
+main > div {
+    border: 1px solid rgb(23, 23, 23);
+    height: 150px;
+    width: 150px;
+    background-color: rgb(242, 242, 242);
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    --color-gold: rgb(255, 191, 0);
+    --gray-color: rgb(26, 26, 26);
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-weight: 300;
+    text-align: center;
+    max-width: 80%;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/**
+ * ############
+ * ## Header ##
+ * ############
+*/
+
+body > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+ul.nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+ul.nav-list > li {
+    font-size: 0.9rem;
+}
+
+ul.nav-list > li:not(:last-child) {
+    text-transform: uppercase;
+}
+
+ul.nav-list > li:last-child {
+    background-color: var(--color-gold);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+}
+
+/**
+ * ##################
+ * ## Presentation ##
+ * ##################
+*/
+
+section.presentation {
+    height: 60vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+    align-items: center;
+    background-image: url('../img/car-background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+section.presentation > h3 {
+    color: var(--color-gold);
+}
+
+section.presentation > p {
+    display: none;
+}
+
+section.presentation > h2,
+section.presentation > h3,
+section.presentation > p {
+    text-shadow: 3px 2px 3px black;
+}
+
+section.presentation > a {
+    background-color: white;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 2px;
+}
+
+/**
+ * ##########
+ * ## Cars ##
+ * ##########
+*/
+
+section.cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+section.cars > p {
+    margin: 1rem 0;
+}
+
+ul.cars-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+ul.cars-list > li {
+    width: 85%;
+}
+
+ul.cars-list > li > figure > figcaption {
+    background-color: var(--color-gold);
+    display: grid;
+    place-content: center;
+    padding: 1.3rem 0;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+/**
+ * ##########
+ * ## Cars ##
+ * ##########
+*/
+
+section.find-car {
+    background-image: url('../img/form-background.jpeg');
+    background-size: cover;
+    height: 65vmin;
+    padding: 2rem;
+}
+
+section.find-car > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+}
+
+section.find-car > div > h2 {
+    color: var(--color-gold);
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(255, 191, 0, 0.6);
+}
+
+section.find-car > div > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.find-car > div > form > select,
+section.find-car > div > form > input {
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 0.5rem;
+    width: 90%;
+}
+
+section.find-car > div > form > button {
+    background-color: white;
+    border: none;
+    padding: 0.2rem 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/**
+ * ###########
+ * ## About ##
+ * ###########
+*/
+
+section.about {
+    padding: 2rem;
+}
+
+section.about,
+ul.about-list,
+ul.about-list > li > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul.about-list {
+    list-style: none;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+ul.about-list > li > section > h3 {
+    background-color: var(--gray-color);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    border: 5px solid var(--color-gold);
+    padding: 0.6rem;
+}
+
+/**
+ * ############
+ * ## Footer ##
+ * ############
+*/
+
+body > footer {
+    background-color: var(--gray-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+body > footer > p {
+    font-weight: 600;
+}
